@@ -1,0 +1,12 @@
+select * from job_history;
+
+select distinct job_id from job_history;
+
+select distinct job_id, department_id from job_history;
+
+select distinct employee_id, start_id from job_history;
+
+select distinct employee_id, start_id, start_date from job_history;
+
+select distinct comission_pct from Employees;
+
