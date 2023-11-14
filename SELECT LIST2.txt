@@ -1,0 +1,21 @@
+select first_name||last_name from employees;
+
+select first_name||salary from employees;
+
+select employee_id||salary from employees;
+
+select ' My name is '|| first_name||' and my surname is ' last_name from employees;
+
+select ' My name is '|| first_name||' and my surname is ' last_name namew from employees;
+
+select comission_pct pct from employees;
+
+select first_name fn, last_name, comission_pct pct from employees;
+
+select start_date, end_date, (end_date-start_date)+1 "Count of days" from job_history;
+
+select start_date, end_date, (end_date-start_date)+1 Count_of_days from job_history;
+
+
+
+
