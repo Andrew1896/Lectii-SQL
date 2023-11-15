@@ -1,0 +1,11 @@
+select 'abc'||'xyz'|| (90*30) from employee;
+
+select * from dual;
+
+select 'abc'||'xyz'|| (90*30) from dual;
+
+select 27*365*24*60*60 "Virsta mea in secunde" from dual;
+
+select q' <It's my life> ' from dual;
+
+
