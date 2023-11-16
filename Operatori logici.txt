@@ -1,5 +1,6 @@
 select * from employees;
 
+operator AND:
 select * from employees where salary>10000;
 
 select * from employees
@@ -9,8 +10,24 @@ select * from employees
 where first_name like ' D% ' and salary>10000 and job_id = 'SA_REP';
 
 
+operator OR:
 select * from employees
 where first_name like ' D% ' or salary>10000; --trebuie sa se indeplineasca cel putin o conditie din toate
 
 select * from employees
 where first_name like ' D% ' or salary>10000 or job_id = 'SA_REP';
+
+
+operator NOT:
+select * from employees where not job_id = 'SA_MAN';
+
+select * from employees where last_name not like ' K% ';
+
+select * from employees where job_id not in ('SA_MAN', 'SA_REP');
+
+select * from employees where salary not between 6000 and 10000;
+
+select * from employees where comission_pct is not null;
+
+select * from employees where comission_pct is not null and last_name not like ' %n ';
+
