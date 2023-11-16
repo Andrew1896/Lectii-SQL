@@ -9,3 +9,18 @@ where salary between employee_id+200 and 12000;
 
 select * from employees where first_name between 'A' and 'C';
 
+select * from departmens where location_id IN (1700, 2300, 1200);
+
+select * from job_history where job_id in ('IT_PROG', 'ST_CLERK');
+
+select * from job_history where end_date in ('31.12.07', '23.12.04', '04.06.07');
+
+select * from departmens where location_id IN (1700, 2300, 1200);
+
+select * from departmens 
+where location_id = 1700 or location_id = 2300 or location_id = 1200; --aceeasi comanda ca cea de mai sus
+
+select * from employees where comision_pct is null;
+
+select * from employees where first_name is null;
+
