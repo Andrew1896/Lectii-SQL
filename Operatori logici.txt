@@ -3,7 +3,14 @@ select * from employees;
 select * from employees where salary>10000;
 
 select * from employees
-where first_name like ' D% ' and salary>10000;
+where first_name like ' D% ' and salary>10000; --trebuie sa se indeplineasca toate conditiile
 
 select * from employees
 where first_name like ' D% ' and salary>10000 and job_id = 'SA_REP';
+
+
+select * from employees
+where first_name like ' D% ' or salary>10000; --trebuie sa se indeplineasca cel putin o conditie din toate
+
+select * from employees
+where first_name like ' D% ' or salary>10000 or job_id = 'SA_REP';
