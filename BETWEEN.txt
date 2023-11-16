@@ -1,0 +1,11 @@
+select first_name, last_name, salary from employees 
+where salary between 7000 and 12000;
+
+select first_name, last_name, salary from employees 
+where salary between employee_id and 12000;
+
+select first_name, last_name, salary from employees 
+where salary between employee_id+200 and 12000;
+
+select * from employees where first_name between 'A' and 'C';
+
