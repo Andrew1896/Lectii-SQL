@@ -1,9 +1,21 @@
 select * from employees;
 
+totul cu litere mici:
 select first_name , LOWER(first_nme) from employees;
 
 select lower ('Salut, CUM meRg TREburile') from dual;
 
-select * from employees where LOWER(first_nme) = 'David';
+select * from employees where LOWER(first_nme) = 'david';
 
 select * from employees where LOWER(first_nme) like ' %en% ';
+
+
+totul cu litere mari:
+select first_name , UPPER(first_nme) from employees;
+
+select * from employees where UPPER(first_nme) = 'DAVID';
+
+select * from employees where UPPER(first_nme) like ' %EN% ';
+
+select UPPER ('Salut, CUM meRg TREburile') from dual;
+
