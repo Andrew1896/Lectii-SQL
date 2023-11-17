@@ -1,0 +1,9 @@
+select * from employees;
+
+select first_name , LOWER(first_nme) from employees;
+
+select lower ('Salut, CUM meRg TREburile') from dual;
+
+select * from employees where LOWER(first_nme) = 'David';
+
+select * from employees where LOWER(first_nme) like ' %en% ';
