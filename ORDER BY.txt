@@ -1,0 +1,22 @@
+select first_name, salary from employees order by salary;
+
+select * from employees where job_id = 'IT_PROG' order by salary;
+
+select first_name, salary, hire_date from employees 
+where job_id = 'IT_PROG' order by first_name;
+
+select salary, hire_date from employees 
+where job_id = 'IT_PROG' order by first_name; -- asc- crescator este setat implicit 
+
+select first_name, salary, hire_date from employees 
+where job_id = 'IT_PROG' order by first_name desc; -- descrescator
+
+select last_name, salary, hire_date, hire_date+salary*2
+from employees where employee_id>120 order by hire_date +salary*2;
+
+select last_name, salary, hire_date, hire_date+salary*2 expr
+from employees where employee_id>120 order by expr;
+
+select * from employees order by comission_pct desc nulls last;
+
+select * from employees order by comission_pct desc nulls first;
