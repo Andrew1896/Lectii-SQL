@@ -19,3 +19,10 @@ select * from employees where UPPER(first_nme) like ' %EN% ';
 
 select UPPER ('Salut, CUM meRg TREburile') from dual;
 
+
+
+incepe toate cuvintele cu litere majuscule, celalte mci:
+select INITCAP ('Salut, CUM meRg TREburile') from dual;
+
+select lower ('Salut, CUM meRg TREburile, Unde esti? mergi_ACASA') from dual;
+
