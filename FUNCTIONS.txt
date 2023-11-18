@@ -38,6 +38,18 @@ select CONCAT(salary*2 , hire_date) from enployees;
 select sysdate from dual;
 
 
+LENGHT:
+select first_name, LENGHT(first_name) lungime from employees;
+
+select LENGHT('Andrei Cataraga ') from dual;
+
+select salary, LENGHT(salary) from employees;
+
+select salary*100, LENGHT(salary*100), hire_date, LENGHT(hire_date) from employees;
+
+select ' My name is '|| first_name||' and my surname is ' ||last_name full_name
+LENGHT' My name is '|| first_name||' and my surname is ' ||last_name lungime 
+from employees;
 
 
 
