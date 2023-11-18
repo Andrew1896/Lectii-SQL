@@ -26,3 +26,19 @@ select INITCAP ('Salut, CUM meRg TREburile') from dual;
 
 select lower ('Salut, CUM meRg TREburile, Unde esti? mergi_ACASA') from dual;
 
+
+
+CONCAT:
+select CONCAT(' Salut ', ' Chelsea ') from dual;
+
+select CONCAT(55, ' Chelsea ') from dual;
+
+select CONCAT(salary*2 , hire_date) from enployees;
+
+select sysdate from dual;
+
+
+
+
+
+
