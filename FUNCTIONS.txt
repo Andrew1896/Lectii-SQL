@@ -97,4 +97,14 @@ select * from employees where INSTR (salary, '2')=3;
 
 select INSTR ('Andrei Cataraga', 'd', 2) from dual; --'2' -de la a cita pozitie incepe cautarea
 
-select INSTR ('Andrei Cataraga', 'a', 2, 3) from dual; --'3' -pe a cita pozitie este al treilea a 
+select INSTR ('Andrei Cataraga', 'a', 2, 3) from dual; --'3' -pe a cita pozitie este al treilea 'a'
+
+
+
+TRUNC:
+select TRUNC (376.63, 5) from dual;
+
+select TRUNC (43556.765, -3) from dual;
+
+
+ 
