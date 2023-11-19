@@ -52,5 +52,19 @@ LENGHT' My name is '|| first_name||' and my surname is ' ||last_name lungime
 from employees;
 
 
+LPAD and RPAD:
+select LPAD ('Andrei', 10, '@') from dual;
+
+select RPAD ('Andrei', 10, '@') from dual;
+
+select first_name, lpad(first_name, 25, '$') from employees;
+
+select first_name, lpad(first_name, 25, '$'), rpad(first_name, 25, '$') from employees;
+
+select first_name, lpad(first_name, 25, 'ABC') from employees;
+
+select RPAD ('salut', 5, '!') from dual;
+
+select rpad(first_name, 15, ' ') || lpad(salary, 8, ' ')from employees;
 
 
