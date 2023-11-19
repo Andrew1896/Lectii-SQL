@@ -65,6 +65,21 @@ select first_name, lpad(first_name, 25, 'ABC') from employees;
 
 select RPAD ('salut', 5, '!') from dual;
 
-select rpad(first_name, 15, ' ') || lpad(salary, 8, ' ')from employees;
+select rpad(first_name, 15, ' ') || lpad(salary, 8, ' ') from employees;
+
+
+
+TRIM:
+select TRIM(trailing 'a' from 'Barcelonaaaaa') from duual;
+
+select TRIM(leading '*' from '****Barcelona***') from duual;
+
+select TRIM(both '*' from '****Barcelona***') from duual;
+
+select TRIM('*' from '****Barcelona***') from duual; --aceeasi comanda ca de mai sus
+
+select TRIM(both ' ' from '    Barcelona     ') from duual;
+
+select TRIM(both 7 from 776454778777) from duual;
 
 
