@@ -83,3 +83,18 @@ select TRIM(both ' ' from '    Barcelona     ') from duual;
 select TRIM(both 7 from 776454778777) from duual;
 
 
+
+INSTR:
+select * from employees;
+
+select * from employees where INSTR (job_id, 'PROG')=4;
+
+select INSTR ('Andrei Cataraga', 'd') from dual;
+
+select * from employees where INSTR (hire_date, '05')=4;
+
+select * from employees where INSTR (salary, '2')=3;
+
+select INSTR ('Andrei Cataraga', 'd', 2) from dual; --'2' -de la a cita pozitie incepe cautarea
+
+select INSTR ('Andrei Cataraga', 'a', 2, 3) from dual; --'3' -pe a cita pozitie este al treilea a 
