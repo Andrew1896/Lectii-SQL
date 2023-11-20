@@ -1,0 +1,11 @@
+select AVG(salary) from employees;
+
+select round(AVG(salary)) from employees;
+
+select AVG(salary) from employees where job_id = ' IT_PROG ';
+
+select avg(distinct salary) from employees;
+
+select AVG(salary), avg(distinct salary) from employees where job_id = ' IT_PROG ';
+
+select AVG(comission_pct), avg(distinct comission_pct) from employees;
