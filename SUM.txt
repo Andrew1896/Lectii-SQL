@@ -1,0 +1,11 @@
+select SUM(salary) from employees;
+
+select 5+null from dual; -- oricice operatie cu null egala cu null
+
+select sum(salary), sum(distinct salary) from employees;
+
+select round(sum(sysdate-hire_date)/365) from employees;
+
+select sum (lenght(first_name)) from employees;
+
+select sum (lenght(first_name))/count(*) from employees;
