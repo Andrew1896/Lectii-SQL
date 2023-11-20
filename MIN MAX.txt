@@ -1,0 +1,12 @@
+select MIN(salary), MAX(salary) from employees;
+
+select MIN(salary), MAX(salary) from employees where department_id=50;
+
+select MIN(hire_date), MAX(hire_date) from employees where department_id=50;
+
+select MIN(last_name), MAX(last_name) from employees where department_id=50;
+
+select count(salary), sum(salary), avg(salary), min(salary), max(salary) from employees;
+
+select min(lenght(first_name)), max(lenght(first_name)) from employees;
+
