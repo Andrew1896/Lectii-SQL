@@ -1,0 +1,24 @@
+select * from employees;
+
+select location_id, count(*) from departments
+group by location_id;
+
+select department_id, count(*) from employees
+group by departement_id order by department_id;
+
+select department_id, job_id count(*) from employees
+group by departement_id, job_id 
+order by department_id;
+
+select department_id, job_id count(*) from employees
+group by departement_id, job_id 
+order by department_id, job_id;
+
+select department_id, manager_id count(*) from employees
+group by departement_id, manager_id 
+order by department_id, manager_id;
+
+select job_id, TO_CHAR (hire_date, 'YYYY') year, sum salary from employees
+where job_id IN ('ST_CLERK', 'SA_REP', 'SH_CLERK') and employee_id>110
+group by job_id, TO_CHAR (hire_date, 'YYYY')
+order by job_id, year; 
