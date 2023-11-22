@@ -1,0 +1,20 @@
+select first_name, last_name, jh.job_id, start_date, end_date
+from employees join job_history jh ON (employees.employee_id = jh.employee_id);
+
+select first_name, last_name, jh.job_id, start_date, end_date, jh.employee_id
+from employees join job_history jh ON (employees.employee_id = jh.employee_id);
+
+select * from departments join regions on
+(region_id*10 = department_id);
+
+select first_name, last_name, jh.job_id, start_date, end_date
+from employees e join job_history jh on
+(e.employee_id = jh.employee_id and e.department_id = jh.department_id);
+
+
+select first_name, last_name, jh.job_id, start_date, end_date
+from employees e join job_history jh on
+(e.employee_id = jh.employee_id or e.department_id = jh.department_id) where salary>5000;
+
+select first_name, department_name from employees e join departments d
+ON (e.employee_id = d.manager_id);
