@@ -3,17 +3,38 @@ select first_name, last_name, salary, department_name
 from employees e JOIN departments d ON (e.department_id = d.department_id);
 
 select first_name, last_name, salary, department_name
-from employees e LEFT OUTER JOIN departments d ON (e.department_id = d.department_id);
+from employees e LEFT OUTER JOIN departments d 
+ON (e.department_id = d.department_id);
 
 select first_name, last_name, salary, department_name
-from departments d LEFT OUTER JOIN employees e ON (e.department_id = d.department_id)
+from departments d LEFT OUTER JOIN employees e 
+ON (e.department_id = d.department_id)
 where department_name like ' %i% ';
 
 select postal_code, city, department_name
-from locations l LEFT OUTER JOIN departments d ON (d.location_id = l.location_id);
+from locations l LEFT OUTER JOIN departments d 
+ON (d.location_id = l.location_id);
 
 select department_name, d.department_id, first_name
 from departments d LEFT OUTER JOIN employees e 
 ON (e.department_id = d.department_id)
 where first_name is null;
+
+
+
+RIGHT OUTER JOIN:
+select first_name, last_name, salary, department_name
+from employees e RIGHT OUTER JOIN departments d
+ON (e.department_id = d.department_id);
+
+select first_name, last_name, salary, department_name, department_id
+from employees e RIGHT OUTER JOIN departments d
+USING (department_id);
+
+select country_name, city, street_address
+from locations L RIGHT OUTER JOIN countries c
+ON (l.country_id = c.country_id);
+
+
+
 
