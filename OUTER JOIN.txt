@@ -37,4 +37,10 @@ ON (l.country_id = c.country_id);
 
 
 
+FULL OUTER JOIN:
+select first_name, last_name, salary, department_name
+from employees e FULL OUTER JOIN departments d
+ON (e.department_id = d.department_id);
+
+
 
