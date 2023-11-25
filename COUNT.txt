@@ -1,0 +1,14 @@
+select COUNT(*) from employees;
+
+select count(*) from employees where salary>5000;
+
+select count (salary) from employees;
+
+select count (comission_pct) from employees;
+
+select count (NVL(comission_pct, 0)) from employees;
+ 
+select count (distinct comission_pct) from employees;
+
+select count (first_name), count (distinct first_name) from employees;
+
